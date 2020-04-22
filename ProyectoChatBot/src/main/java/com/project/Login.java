@@ -4,13 +4,17 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 public class Login {
-
+    @FXML
+    private TextField textUser;
+    @FXML
+    private TextField textPassword;
     @FXML
     private void verifyUserPass() throws IOException {
-        String name = ((TextField) App.scene.lookup("#textUser")).getText();
-        String password = ((TextField) App.scene.lookup("#textPassword")).getText();
+        String name = textUser.getText();
+        String password = textPassword.getText();
         if(name.equalsIgnoreCase("kevin") && name.equalsIgnoreCase("kevin")) {
             App.setRoot("secondary");
         }else {
