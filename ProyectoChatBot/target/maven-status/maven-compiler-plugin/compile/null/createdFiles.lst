@@ -1,2 +1,5 @@
-com\proyecto\Login.class
-com\proyecto\Registration.class
+com\project\Registration.class
+com\project\SecondaryController.class
+com\project\Login.class
+module-info.class
+com\project\App.class
