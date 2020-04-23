@@ -2,12 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/database/DatabaseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../database.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/awt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/awt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/fontmanager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/fontmanager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/freetype.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/freetype.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/java.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/java.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/java.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/java.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/javajpeg.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/javajpeg.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/javaw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/javaw.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jawt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/jawt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jimage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/jimage.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jli.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/jli.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jrunscript.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/jrunscript.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jsound.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/jsound.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/keytool.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/keytool.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/lcms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/lcms.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/mlib_image.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/mlib_image.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/msvcp140.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/msvcp140.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/net.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/net.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/nio.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/nio.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/prefs.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/prefs.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/server/jvm.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/server/jvm.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/splashscreen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/splashscreen.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/vcruntime140.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/vcruntime140.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/verify.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/verify.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/zip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/bin/zip.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/java.security" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/conf/security/java.security" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.base/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/cldr.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.base/cldr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/public_suffix.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.base/public_suffix.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/freetype.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/freetype.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/giflib.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/giflib.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/jpeg.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/jpeg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/mesa3d.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/mesa3d.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/bcel.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/bcel.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/jcup.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/jcup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/xalan.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/xalan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/classlist" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/classlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.bfc" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.bfc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.properties.src" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.properties.src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jawt.lib" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/jawt.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jrt-fs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/jrt-fs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jvm.lib" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/jvm.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/modules" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/modules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/psfont.properties.ja" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/psfont.properties.ja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/psfontj2d.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/psfontj2d.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/default.policy" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/security/default.policy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/public_suffix_list.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/security/public_suffix_list.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/tzmappings" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/tzmappings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim/release" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/release" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +85,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1aAxXhV2pd8c0WKkqoOGvRly6lE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Proyecto-Final-ee5f0ebe59a2434e969f124b9bf7fb6ce25d477f/Proyecto-Final-ee5f0ebe59a2434e969f124b9bf7fb6ce25d477f/ProyectoChatBot" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2724595" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -89,7 +150,14 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1587682296405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682296405" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587404837276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -98,38 +166,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587583128287" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587517307641">
+    <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587682019793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587517307641" />
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1587582798710">
+    <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682019793" />
+    <state x="771" y="255" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1587682359268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582798710" />
-    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1587582798710">
+    <state x="771" y="255" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682359268" />
+    <state x="688" y="307" key="#com.intellij.tools.ToolEditorDialog" timestamp="1587681484440">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582798710" />
-    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1587582798710">
+    <state x="688" y="307" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681484440" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587682109101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582798710" />
-    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1587582798710">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
+    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1587683490924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582798710" />
-    <state x="421" y="119" key="SettingsEditor" timestamp="1587579033876">
+    <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587683490924" />
+    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1587683490924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587579033876" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587578578064">
+    <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587683490924" />
+    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1587683490924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587578578064" />
+    <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587683490924" />
+    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1587683490924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587683490924" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587681270963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681270963" />
+    <state x="421" y="119" key="SettingsEditor" timestamp="1587682390453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682390453" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587681819534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681819534" />
+    <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587681733420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681733420" />
     <state x="-1848" y="0" width="1181" height="829" maximized="true" key="dock-window-1" timestamp="1587582962343">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1848" y="0" width="1181" height="829" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582962343" />
+    <state x="342" y="215" key="new project wizard" timestamp="1587670867000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="215" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587670867000" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

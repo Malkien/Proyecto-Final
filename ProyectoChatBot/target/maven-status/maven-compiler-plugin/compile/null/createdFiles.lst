@@ -1,6 +1,8 @@
+com\project\database\DatabaseUtils.class
 com\project\Registration$1.class
 com\project\Registration.class
 com\project\SecondaryController.class
 com\project\Login.class
 module-info.class
+com\project\classes\User.class
 com\project\App.class

@@ -1,0 +1,7 @@
+CREATE USER adminChatBot  IDENTIFIED BY 'admin';
+
+CREATE DATABASE chatbot;
+
+GRANT ALL PRIVILEGES ON `chatbot` TO adminChatBot;
+
+FLUSH PRIVILEGES;
