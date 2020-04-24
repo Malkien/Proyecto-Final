@@ -1,5 +1,6 @@
 package com.project.database;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -10,7 +11,7 @@ public class DataBaseUtils {
     public static final String passDB = "admin";
     public static final String nameTableUser = "userEnterprise";
 
-    public static Statement createStatement() throws SQLException {
-        return DriverManager.getConnection(nameDB,userDB,passDB).createStatement();
+    public static Connection createConnection() throws SQLException {
+        return DriverManager.getConnection(nameDB,userDB,passDB);
     }
 }

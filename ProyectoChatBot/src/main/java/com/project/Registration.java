@@ -1,13 +1,15 @@
 package com.project;
 
+import com.project.classes.UserDao;
+import com.project.exceptions.*;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Cursor;
 import javafx.scene.control.*;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Registration implements Initializable {
@@ -51,6 +53,41 @@ public class Registration implements Initializable {
     }
     @FXML
     private void registerAction(){
-
+        String question = "";
+        if(resQuestion.isVisible()){
+            question = resQuestion.getValue();
+        }else{
+            question = resQuestion2.getText();
+        }
+        try{
+            if(resPassword.getText().equalsIgnoreCase(resPassword2.getText())){
+                UserDao userDao = new UserDao(
+                        resUsername.getText(),
+                        resPassword.getText(),
+                        resEmail.getText(),
+                        resDate.getValue(),
+                        question,
+                        resAnswer.getText()
+                );
+            }else{
+                throw new PasswordNotMatchException();
+            }
+        } catch (PasswordNotMatchException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (EmailInvalidException e) {
+            e.printStackTrace();
+        } catch (UsernameLengthException e) {
+            e.printStackTrace();
+        } catch (PasswordInvalidException e) {
+            e.printStackTrace();
+        } catch (LengthAnswerException e) {
+            e.printStackTrace();
+        } catch (LengthQuestionException e) {
+            e.printStackTrace();
+        } catch (UnderAgeException e) {
+            e.printStackTrace();
+        }
     }
 }
