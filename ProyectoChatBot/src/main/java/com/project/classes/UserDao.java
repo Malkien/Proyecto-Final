@@ -53,13 +53,18 @@ public class UserDao {
      * @param question THE QUESTION
      * @param answer THE ANSWER
      */
-    public UserDao(String username, String password, String email, LocalDate birthday, String question, String answer) throws SQLException, LengthQuestionException, EmailInvalidException, LengthAnswerException, PasswordInvalidException, UsernameLengthException, UnderAgeException {
+    public UserDao(String username, String password, String email, LocalDate birthday, String question, String answer) throws SQLException, LengthQuestionException, EmailInvalidException, LengthAnswerException, PasswordInvalidException, UsernameLengthException, UnderAgeException, EmailUsedException {
         this.user = new User(username, password,email,birthday,question,answer);
         try(Connection connection = DataBaseUtils.createConnection()){
+
+            System.out.println("Conected OKKKKKKKKKKKKKKKKKK");
             connection.createStatement().execute(
                     "INSERT INTO "+DataBaseUtils.nameTableUser+" VALUES " +
-                            "( '"+username+"', AES_ENCRYPT('"+password+"', '"+answer+"'), '"+email+"','"+birthday+"','"+question+"','"+answer+"',)"
+                            "( '"+user.getUsername()+"', AES_ENCRYPT('"+user.getPassword()+"', '"+user.getAnswer()+"'), '"+user.getEmail()+"','"+user.getBirthday()+"',\""+user.getQuestion()+"\",'"+user.getAnswer()+"');"
             );
+            System.out.println("INSERT OKKKKKKKKKKKKKKKKKKKKKKKKK");
+        }catch (SQLException ex){
+            throw new EmailUsedException();
         }
     }
 
@@ -132,6 +137,7 @@ public class UserDao {
             connection.createStatement().executeUpdate(
                     "UPDATE "+DataBaseUtils.nameTableUser+" SET birthday='"+birthday+"' WHERE email='"+this.user.getEmail()+"'"
             );
+            connection.commit();
         }
     }
 
@@ -180,6 +186,7 @@ public class UserDao {
             connection.createStatement().executeUpdate(
                     "UPDATE "+DataBaseUtils.nameTableUser+" SET "+field+"='"+modify+"' WHERE email='"+this.user.getEmail()+"'"
             );
+            connection.commit();
         }
     }
 }

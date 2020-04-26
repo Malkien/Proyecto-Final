@@ -37,7 +37,7 @@
         <PasswordField fx:id="resPassword" prefWidth="200.0" promptText="**********" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <PasswordField fx:id="resPassword2" prefWidth="200.0" promptText="**********" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <TextField fx:id="resEmail" prefWidth="200.0" promptText="aa@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-        <DatePicker fx:id="resDate" editable="false" maxWidth="1.7976931348623157E308" promptText="Date" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <DatePicker fx:id="resDate" maxWidth="1.7976931348623157E308" promptText="Date" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <ChoiceBox fx:id="resQuestion" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
            <cursor>
               <Cursor fx:constant="HAND" />
@@ -69,6 +69,6 @@
             <Insets bottom="20.0" />
          </VBox.margin>
       </CheckBox>
-    <Button fx:id="okButton" mnemonicParsing="false" text="Register" wrapText="true" />
+    <Button fx:id="okButton" mnemonicParsing="false" onAction="#registerAction" text="Register" wrapText="true" />
   </children>
 </VBox>

@@ -39,7 +39,7 @@ public class User {
      * @throws SQLException
      */
     public void setUsername(String username) throws UsernameLengthException {
-        if(username.length()<=5 && username.length()>=20){
+        if(username.length()>=5 && username.length()<=20){
             this.username = username;
         }else{
             throw new UsernameLengthException();
@@ -55,7 +55,7 @@ public class User {
     }
 
     public void setPassword(String password) throws PasswordInvalidException {
-        if(password.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,50}$")){
+        if(password.matches("^(?=.*\\d)(?=.*[\\u0021-\\u002b\\u003c-\\u0040])(?=.*[A-Z])(?=.*[a-z])\\S{8,50}$")){
             this.password = password;
         }else{
             throw new PasswordInvalidException();
@@ -117,6 +117,14 @@ public class User {
      * @param question THE NEW QUESTION
      */
     public void setQuestion(String question) throws LengthQuestionException {
+        String[] metaCharacters = {"\\","^","$","{","}","[","]","(",")",".","*","+","?","|","<",">","-","&","%","'"};
+
+        for (int i = 0 ; i < metaCharacters.length ; i++){
+            if(question.contains(metaCharacters[i])){
+                question = question.replace(metaCharacters[i],"\\"+metaCharacters[i]);
+            }
+        }
+
         if(question.length()<=100){
             this.question = question;
         }else{

@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class Registration implements Initializable {
@@ -34,6 +35,7 @@ public class Registration implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         resQuestion.getItems().setAll("What was your childhood's pet?", "What was the name of your first love?", "Custom question");
+        resQuestion.getSelectionModel().selectFirst();
         resQuestion.getSelectionModel().selectedItemProperty().addListener(
                 new ChangeListener<String>() {
                     @Override
@@ -59,7 +61,11 @@ public class Registration implements Initializable {
         }else{
             question = resQuestion2.getText();
         }
+
         try{
+            if(!resCheck.isSelected()){
+                throw new AcceptRulesException();
+            }
             if(resPassword.getText().equalsIgnoreCase(resPassword2.getText())){
                 UserDao userDao = new UserDao(
                         resUsername.getText(),
@@ -87,6 +93,10 @@ public class Registration implements Initializable {
         } catch (LengthQuestionException e) {
             e.printStackTrace();
         } catch (UnderAgeException e) {
+            e.printStackTrace();
+        } catch (EmailUsedException e) {
+            e.printStackTrace();
+        } catch (AcceptRulesException e) {
             e.printStackTrace();
         }
     }
