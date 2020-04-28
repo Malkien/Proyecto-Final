@@ -18,27 +18,41 @@ public class UserDao {
      * @param password The password to check the autentication
      * @throws SQLException If the User is not found
      */
-    public UserDao(String email, String password) throws SQLException, LengthQuestionException, EmailInvalidException, LengthAnswerException, PasswordInvalidException, UsernameLengthException, UnderAgeException {
+    public UserDao(String email, String password) throws SQLException {
         try( Connection connection = DataBaseUtils.createConnection() ){
             Statement statement =connection.createStatement();
             //La palabra secreta para desencriptar el password para ser segura, tendria que estar en un servidor y apartado de la ddbb por si es comprometida, para que nadie la pudiera user, mientras el programa esta en version de desarrollo y sin mas acto que el educativo, no se usara un servidor ajeno al local por lo que se usara este metodo
-            ResultSet userSecret = statement.executeQuery("SELECT answer FROM "+DataBaseUtils.nameTableUser+"WHERE email='"+email+"'");
+            ResultSet userSecret = statement.executeQuery("SELECT answer FROM "+DataBaseUtils.nameTableUser+" WHERE email=\""+email+"\"");
             userSecret.next();
             ResultSet userFound = statement.executeQuery(
-                    "SELECT * FROM "+DataBaseUtils.nameTableUser+"WHERE email='"+email+"' AND password= AES_ENCRYPT('"+password+"', '"+userSecret.getString(0)+"')"
+                    "SELECT * FROM "+DataBaseUtils.nameTableUser+" WHERE email = '"+email+"' AND AES_DECRYPT(password, '"+userSecret.getString("answer")+"') = \""+password+"\""
             );
             userSecret.close();
             userFound.next();
             this.user = new User(
-                    userFound.getString(0),
-                    userFound.getString(1),
-                    userFound.getString(2),
-                    userFound.getDate(3).toLocalDate(),
-                    userFound.getString(4),
-                    userFound.getString(5)
+                    userFound.getString("username"),
+                    userFound.getString("password"),
+                    userFound.getString("email"),
+                    userFound.getDate("birthday").toLocalDate(),
+                    userFound.getString("question"),
+                    userFound.getString("answer")
             );
             userFound.close();
             statement.close();
+        } catch (UsernameLengthException e) {
+            e.printStackTrace();
+        } catch (LengthQuestionException e) {
+            e.printStackTrace();
+        } catch (PasswordInvalidException e) {
+            e.printStackTrace();
+        } catch (BirthdayNullException e) {
+            e.printStackTrace();
+        } catch (UnderAgeException e) {
+            e.printStackTrace();
+        } catch (EmailInvalidException e) {
+            e.printStackTrace();
+        } catch (LengthAnswerException e) {
+            e.printStackTrace();
         }
 
 
@@ -52,17 +66,23 @@ public class UserDao {
      * @param birthday THE BIRTHDAY
      * @param question THE QUESTION
      * @param answer THE ANSWER
+     * @throws SQLException
+     * @throws LengthQuestionException
+     * @throws EmailInvalidException
+     * @throws LengthAnswerException
+     * @throws PasswordInvalidException
+     * @throws UsernameLengthException
+     * @throws UnderAgeException
+     * @throws EmailUsedException
+     * @throws BirthdayNullException
      */
-    public UserDao(String username, String password, String email, LocalDate birthday, String question, String answer) throws SQLException, LengthQuestionException, EmailInvalidException, LengthAnswerException, PasswordInvalidException, UsernameLengthException, UnderAgeException, EmailUsedException {
+    public UserDao(String username, String password, String email, LocalDate birthday, String question, String answer) throws SQLException, LengthQuestionException, EmailInvalidException, LengthAnswerException, PasswordInvalidException, UsernameLengthException, UnderAgeException, EmailUsedException, BirthdayNullException {
         this.user = new User(username, password,email,birthday,question,answer);
         try(Connection connection = DataBaseUtils.createConnection()){
-
-            System.out.println("Conected OKKKKKKKKKKKKKKKKKK");
             connection.createStatement().execute(
                     "INSERT INTO "+DataBaseUtils.nameTableUser+" VALUES " +
                             "( '"+user.getUsername()+"', AES_ENCRYPT('"+user.getPassword()+"', '"+user.getAnswer()+"'), '"+user.getEmail()+"','"+user.getBirthday()+"',\""+user.getQuestion()+"\",'"+user.getAnswer()+"');"
             );
-            System.out.println("INSERT OKKKKKKKKKKKKKKKKKKKKKKKKK");
         }catch (SQLException ex){
             throw new EmailUsedException();
         }
@@ -131,7 +151,7 @@ public class UserDao {
      * @param birthday THE NEW BIRTHDAY
      * @throws SQLException
      */
-    public void setBirthday(LocalDate birthday) throws SQLException, UnderAgeException {
+    public void setBirthday(LocalDate birthday) throws SQLException, UnderAgeException, BirthdayNullException {
         this.user.setBirthday(birthday);
         try(Connection connection = DataBaseUtils.createConnection()){
             connection.createStatement().executeUpdate(

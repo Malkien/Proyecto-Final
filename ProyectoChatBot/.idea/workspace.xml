@@ -2,156 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/exceptions/AcceptRulesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/exceptions/EmailUsedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/exceptions/BirthdayNullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/Principal.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/images/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/SecondaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/database/DataBaseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/database/DataBaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/project/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-console-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-private-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/awt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/executable" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/executable.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/fontmanager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/freetype.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/java.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/java.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/javajpeg.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/javaw.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jawt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jimage.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jli.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jrunscript.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/jsound.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/keytool.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/lcms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/mlib_image.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/msvcp140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/nio.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/prefs.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/server/jvm.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/splashscreen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/ucrtbase.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/vcruntime140.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/verify.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/bin/zip.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/net.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/java.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/java.security" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/limited/default_US_export.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/limited/default_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/limited/exempt_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/unlimited/default_US_export.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/security/policy/unlimited/default_local.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/conf/sound.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/aes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/asm.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/c-libutl.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/cldr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/icu.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/public_suffix.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/unicode.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.base/zlib.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.datatransfer/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.datatransfer/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.datatransfer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/colorimaging.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/freetype.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/giflib.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/harfbuzz.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/jpeg.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/lcms.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/libpng.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/mesa3d.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.desktop/opengl.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.prefs/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.prefs/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.prefs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.scripting/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.scripting/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.scripting/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/bcel.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/dom.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/jcup.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/xalan.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/java.xml/xerces.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/jdk.unsupported/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/jdk.unsupported/ASSEMBLY_EXCEPTION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/legal/jdk.unsupported/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/classlist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.bfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/fontconfig.properties.src" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jawt.lib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jrt-fs.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jvm.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/jvm.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gol-sim.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/modules" beforeDir="false" afterPath="$PROJECT_DIR$/target/gol-sim/lib/modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/psfont.properties.ja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/psfontj2d.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/blacklisted.certs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/cacerts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/default.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/security/public_suffix_list.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/tzdb.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/lib/tzmappings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gol-sim/release" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -199,10 +69,12 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2724595" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project" />
+      <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project\images" />
       <recent name="C:\Users\malki\IdeaProjects\pruebafx\ProyectoChatBot\ProyectoChatBot\ProyectoChatBot\ProyectoChatBot\src\main\resources\com\proyecto" />
     </key>
   </component>
@@ -256,10 +128,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587404837276" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1587762830095">
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588088188054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587762830095" />
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588088188054" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588099818773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588099818773" />
     <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587682019793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,42 +156,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1587944151855">
+    <state width="1877" height="139" key="GridCell.Tab.0.bottom" timestamp="1588111358358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587944151855" />
-    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1587944151854">
+    <state width="1877" height="139" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588111358358" />
+    <state width="1877" height="139" key="GridCell.Tab.0.center" timestamp="1588111358358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587944151854" />
-    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1587944151854">
+    <state width="1877" height="139" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588111358358" />
+    <state width="1877" height="139" key="GridCell.Tab.0.left" timestamp="1588111358358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587944151854" />
-    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1587944151855">
+    <state width="1877" height="139" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588111358358" />
+    <state width="1877" height="139" key="GridCell.Tab.0.right" timestamp="1588111358358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587944151855" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587681270963">
+    <state width="1877" height="139" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588111358358" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588095530180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681270963" />
-    <state x="421" y="119" key="SettingsEditor" timestamp="1587682390453">
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588095530180" />
+    <state x="421" y="119" key="SettingsEditor" timestamp="1588088051436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682390453" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587936636403">
+    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588088051436" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588086605538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587936636403" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588086605538" />
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587681733420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681733420" />
-    <state x="-1848" y="0" width="1181" height="829" maximized="true" key="dock-window-1" timestamp="1587582962343">
+    <state x="-967" y="0" width="974" height="1047" maximized="true" key="dock-window-1" timestamp="1588099541692">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1848" y="0" width="1181" height="829" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587582962343" />
+    <state x="-967" y="0" width="974" height="1047" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588099541692" />
+    <state x="1208" y="300" width="1893" height="1027" maximized="true" key="dock-window-2" timestamp="1588110199042">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1208" y="300" width="1893" height="1027" maximized="true" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588110199042" />
+    <state x="-1877" y="0" width="1893" height="1027" maximized="true" key="dock-window-3" timestamp="1588111240668">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1877" y="0" width="1893" height="1027" maximized="true" key="dock-window-3/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588111240668" />
     <state x="342" y="215" key="new project wizard" timestamp="1587670867000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

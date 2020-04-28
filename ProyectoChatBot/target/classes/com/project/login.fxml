@@ -14,7 +14,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" fillWidth="true" prefHeight="428.0" prefWidth="455.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Login">
+<VBox alignment="CENTER" fillWidth="true" prefHeight="428.0" prefWidth="455.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
   <children>
     <Label prefHeight="30.0" text="Login" textAlignment="CENTER">
       <font>

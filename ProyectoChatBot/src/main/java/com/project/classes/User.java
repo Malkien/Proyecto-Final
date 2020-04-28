@@ -16,7 +16,7 @@ public class User {
     private String question;
     private String answer;
 
-    public User(String username, String password, String email, LocalDate birthday, String question, String answer) throws UsernameLengthException, PasswordInvalidException, EmailInvalidException, UnderAgeException, LengthQuestionException, LengthAnswerException {
+    public User(String username, String password, String email, LocalDate birthday, String question, String answer) throws UsernameLengthException, PasswordInvalidException, EmailInvalidException, UnderAgeException, LengthQuestionException, LengthAnswerException, BirthdayNullException {
         setUsername(username);
         setPassword(password);
         setEmail(email);
@@ -54,12 +54,8 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) throws PasswordInvalidException {
-        if(password.matches("^(?=.*\\d)(?=.*[\\u0021-\\u002b\\u003c-\\u0040])(?=.*[A-Z])(?=.*[a-z])\\S{8,50}$")){
-            this.password = password;
-        }else{
-            throw new PasswordInvalidException();
-        }
+    public void setPassword(String password){
+        this.password = password;
     }
 
     /**
@@ -96,11 +92,15 @@ public class User {
      * @param birthday THE NEW BIRTHDAY
      * @throws SQLException
      */
-    public void setBirthday(LocalDate birthday) throws UnderAgeException {
-        if(Period.between(birthday,LocalDate.now()).getYears()>=18){
-            this.birthday = birthday;
-        }else{
-            throw new UnderAgeException();
+    public void setBirthday(LocalDate birthday) throws UnderAgeException, BirthdayNullException {
+        try {
+            if (Period.between(birthday, LocalDate.now()).getYears() >= 18) {
+                this.birthday = birthday;
+            } else {
+                throw new UnderAgeException();
+            }
+        }catch (NullPointerException ex){
+            throw new BirthdayNullException();
         }
     }
 
@@ -125,7 +125,7 @@ public class User {
             }
         }
 
-        if(question.length()<=100){
+        if(question.length()>=5 && question.length()<=100){
             this.question = question;
         }else{
             throw new LengthQuestionException();
@@ -145,10 +145,22 @@ public class User {
      * @param answer THE NEW ANSWER
      */
     public void setAnswer(String answer) throws LengthAnswerException {
-        if(answer.length()<=100){
+        if(answer.length()>=4 && answer.length()<=100){
             this.answer = answer;
         }else{
             throw new LengthAnswerException();
         }
+    }
+
+    /**
+     * CHECK IF THE PASSWORD IS VALID
+     * @param password THE PASSWORD
+     * @return TRUE -> YES, FALSE ->NO
+     */
+    public static boolean checkPassword(String password){
+        if(password.matches("^(?=.*\\d)(?=.*[\\u0021-\\u002b\\u003c-\\u0040])(?=.*[A-Z])(?=.*[a-z])\\S{8,50}$")){
+            return true;
+        }
+        return false;
     }
 }

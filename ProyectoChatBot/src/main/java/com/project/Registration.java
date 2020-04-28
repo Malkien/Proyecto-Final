@@ -1,19 +1,26 @@
 package com.project;
 
+import com.project.classes.User;
 import com.project.classes.UserDao;
 import com.project.exceptions.*;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 public class Registration implements Initializable {
+    private Stage stage;
     @FXML
     private ChoiceBox<String> resQuestion;
     @FXML
@@ -53,6 +60,30 @@ public class Registration implements Initializable {
                 }
         );
     }
+
+    public Registration(Stage stage){
+        stage = stage;
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("registration.fxml"));
+
+            // Set this class as the controller
+            loader.setController(this);
+
+            // Load the scene
+            stage.setScene(new Scene(loader.load()));
+
+            // Setup the window/stage
+            stage.setTitle("Registration");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showStage() {
+        stage.show();
+    }
+
     @FXML
     private void registerAction(){
         String question = "";
@@ -63,8 +94,12 @@ public class Registration implements Initializable {
         }
 
         try{
+
             if(!resCheck.isSelected()){
                 throw new AcceptRulesException();
+            }
+            if(!User.checkPassword(resPassword.getText())){
+                throw new PasswordInvalidException();
             }
             if(resPassword.getText().equalsIgnoreCase(resPassword2.getText())){
                 UserDao userDao = new UserDao(
@@ -79,25 +114,36 @@ public class Registration implements Initializable {
                 throw new PasswordNotMatchException();
             }
         } catch (PasswordNotMatchException e) {
-            e.printStackTrace();
+            errorTextField(resPassword2,"Password don't match");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (EmailInvalidException e) {
-            e.printStackTrace();
+            errorTextField(resEmail,"Invalid email");
         } catch (UsernameLengthException e) {
-            e.printStackTrace();
+            errorTextField(resUsername,"Length between 5-20");
         } catch (PasswordInvalidException e) {
-            e.printStackTrace();
+           errorTextField(resPassword, "Invalid password");
         } catch (LengthAnswerException e) {
-            e.printStackTrace();
+            errorTextField(resAnswer,"Length between 5-100");
         } catch (LengthQuestionException e) {
-            e.printStackTrace();
+            errorTextField(resQuestion2, "Length between 5-100");
         } catch (UnderAgeException e) {
-            e.printStackTrace();
+            resDate.setValue(null);
+            resDate.setPromptText("Age under 18");
+            resDate.setStyle("-fx-prompt-text-fill: red;");
         } catch (EmailUsedException e) {
-            e.printStackTrace();
+            errorTextField(resEmail,"This email is in use");
         } catch (AcceptRulesException e) {
-            e.printStackTrace();
+            resCheck.setTextFill(Color.RED);
+        } catch (BirthdayNullException e) {
+            resDate.setValue(null);
+            resDate.setPromptText("Date invalid");
+            resDate.getEditor().setBackground(new Background(new BackgroundFill(Color.DARKRED,null,null)));
         }
+    }
+    private void errorTextField(TextField field, String text){
+        field.clear();
+        field.setPromptText(text);
+        field.setStyle("-fx-prompt-text-fill: red;");
     }
 }
