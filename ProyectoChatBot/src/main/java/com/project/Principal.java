@@ -8,15 +8,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SecondaryController {
+public class Principal {
     private Stage stage;
     private UserDao user;
 
-    public SecondaryController(UserDao user){
+    public Principal(UserDao user){
         this.user = user;
         stage = new Stage();
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("secondary.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("principal.fxml"));
 
             // Set this class as the controller
             loader.setController(this);
@@ -27,7 +27,7 @@ public class SecondaryController {
             // Setup the window/stage
             stage.setTitle("Secondary");
             stage.setResizable(false);
-
+            showStage();
         } catch (IOException e) {
             e.printStackTrace();
         }

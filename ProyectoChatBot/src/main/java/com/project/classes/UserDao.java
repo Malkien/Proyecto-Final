@@ -18,7 +18,7 @@ public class UserDao {
      * @param password The password to check the autentication
      * @throws SQLException If the User is not found
      */
-    public UserDao(String email, String password) throws SQLException {
+    public UserDao(String email, String password) throws UserLoginException {
         try( Connection connection = DataBaseUtils.createConnection() ){
             Statement statement =connection.createStatement();
             //La palabra secreta para desencriptar el password para ser segura, tendria que estar en un servidor y apartado de la ddbb por si es comprometida, para que nadie la pudiera user, mientras el programa esta en version de desarrollo y sin mas acto que el educativo, no se usara un servidor ajeno al local por lo que se usara este metodo
@@ -53,6 +53,8 @@ public class UserDao {
             e.printStackTrace();
         } catch (LengthAnswerException e) {
             e.printStackTrace();
+        } catch (SQLException e) {
+            throw new UserLoginException();
         }
 
 
