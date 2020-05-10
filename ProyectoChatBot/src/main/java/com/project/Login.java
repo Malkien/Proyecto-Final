@@ -22,43 +22,24 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class Login {
-    private Stage stage;
+public class Login extends Screen{
     @FXML
     private TextField textUser;
     @FXML
     private PasswordField textPassword;
 
     public Login(){
-        stage = new Stage();
-        try {
-            FXMLLoader loader = new FXMLLoader(this.getClass().getResource("login.fxml"));
-
-            // Set this class as the controller
-            loader.setController(this);
-            // Load the scene
-            stage.setScene(new Scene(loader.load()));
-
-            // Setup the window/stage
-            stage.setTitle("Login");
-            stage.setResizable(false);
-            stage.initStyle(StageStyle.DECORATED);
-            stage.getIcons().add(new Image(this.getClass().getResourceAsStream("images/icon.png")));
-            stage.sizeToScene();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void showStage() {
-        stage.show();
+        super(new Stage(), "login.fxml", "Login", false);
+        //getStage().initStyle(StageStyle.DECORATED);
+        getStage().getIcons().add(new Image(this.getClass().getResourceAsStream("images/icon.png")));
+        getStage().sizeToScene();
     }
 
     @FXML
     private void verifyUserPass() throws IOException {
         try {
             UserDao user = new UserDao(textUser.getText(),textPassword.getText());
-            stage.close();
+            getStage().close();
             Principal principal = new Principal(user);
         }catch (UserLoginException e){
             var alertDialog = new Alert(Alert.AlertType.ERROR);
@@ -93,6 +74,6 @@ public class Login {
     }
     @FXML
     private void switchToRegistration() throws  IOException {
-        Registration registration = new Registration(stage);
+        Registration registration = new Registration(getStage());
     }
 }

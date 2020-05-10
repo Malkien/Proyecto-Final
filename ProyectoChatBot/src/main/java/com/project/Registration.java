@@ -19,8 +19,7 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class Registration implements Initializable {
-    private Stage stage;
+public class Registration extends Screen implements Initializable {
     @FXML
     private ChoiceBox<String> resQuestion;
     @FXML
@@ -62,26 +61,7 @@ public class Registration implements Initializable {
     }
 
     public Registration(Stage stage){
-        stage = stage;
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("registration.fxml"));
-
-            // Set this class as the controller
-            loader.setController(this);
-
-            // Load the scene
-            stage.setScene(new Scene(loader.load()));
-
-            // Setup the window/stage
-            stage.setTitle("Registration");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void showStage() {
-        stage.show();
+        super(stage, "registration.fxml", "Registration", false);
     }
 
     @FXML

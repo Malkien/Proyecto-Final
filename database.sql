@@ -14,6 +14,14 @@ CREATE TABLE IF NOT EXISTS chatbot.user(
     answer varchar(100) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS chatbot.api(
+	id int PRIMARY KEY auto_increment,
+    name varchar(50) UNIQUE NOT NULL,
+	apiKey varbinary(100) NOT NULL,
+    apiId varbinary(100) NOT NULL,
+    email varchar(50) NOT NULL,
+    foreign key (email) references user(email) 
+);
 GRANT SELECT, INSERT, UPDATE ON chatbot.* TO 'adminchatbot';
 
 FLUSH PRIVILEGES;

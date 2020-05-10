@@ -8,6 +8,10 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.logging.LogManager;
 
+/**
+ * This class contain the methods and variables for the use of ibm watson assistant
+ * @author Malkien
+ */
 public class IbmAssistant {
     private String url;
     private String apiKey;
@@ -17,17 +21,18 @@ public class IbmAssistant {
 
     public IbmAssistant(String apiKey, String url){
         LogManager.getLogManager().reset();//Crear log
-        IamAuthenticator authenticator = new IamAuthenticator("YJmV5K8mOWHPTUmTWTwO_U0v9PhPVvPlcfexgD2N6E1D"); //sustituir por la apikey
+        IamAuthenticator authenticator = new IamAuthenticator(apiKey); //sustituir por la apikey
         assistant = new Assistant(String.valueOf(LocalDate.now()), authenticator);
-        assistantId = "https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/34a99098-ec05-430b-92cd-43b5508e229a"; // sustituir por el ID de asistente
+        assistantId = url; // sustituir por el ID de asistente
     }
-    public void createSession(){
+    private void createSession(){
         CreateSessionOptions createSessionOptions = new CreateSessionOptions.Builder(assistantId).build();
         SessionResponse session = assistant.createSession(createSessionOptions).execute().getResult();
         sessionId = session.getSessionId();
     }
-    public void deleteSession(){
-
+    private void deleteSession(){
+        DeleteSessionOptions deleteSessionOptions = new DeleteSessionOptions.Builder(assistantId, sessionId).build();
+        assistant.deleteSession(deleteSessionOptions).execute();
     }
 
     public void chatUp(){
@@ -67,5 +72,6 @@ public class IbmAssistant {
                     .text(inputText)
                     .build();
         } while(!input.text().equals("quit"));
+        deleteSession();
     }
 }
