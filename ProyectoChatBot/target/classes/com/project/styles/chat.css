@@ -1,0 +1,22 @@
+#containerChat{
+	-fx-background-color: red;
+}
+
+#containerControllersChat{
+	-fx-background-color:yellow;
+}
+
+#mainChat{
+	-fx-background-color:blue;
+}
+
+#buttonSend{
+	-fx-width: 10%;
+	-fx-height: 90%;
+}
+
+#textFieldSend{
+	-fx-width: 80%;
+	-fx-height: 90%;
+	-fx-background-color: yellow;
+}

@@ -9,6 +9,7 @@ import java.util.Optional;
 
 import com.project.classes.User;
 import com.project.classes.UserDao;
+import com.project.classes.VariableDebug;
 import com.project.database.DataBaseUtils;
 import com.project.exceptions.*;
 import javafx.application.Platform;
@@ -31,14 +32,19 @@ public class Login extends Screen{
     public Login(){
         super(new Stage(), "login.fxml", "Login", false);
         //getStage().initStyle(StageStyle.DECORATED);
-        getStage().getIcons().add(new Image(this.getClass().getResourceAsStream("images/icon.png")));
-        getStage().sizeToScene();
+
     }
 
     @FXML
     private void verifyUserPass() throws IOException {
         try {
-            UserDao user = new UserDao(textUser.getText(),textPassword.getText());
+            UserDao user = null;
+            if(VariableDebug.DEBUG){
+                user = new UserDao("kevin@kevin.com","Kicsnet9*");
+            }else{
+                user = new UserDao(textUser.getText(),textPassword.getText());
+            }
+            //UserDao user = new UserDao(textUser.getText(),textPassword.getText());
             getStage().close();
             Principal principal = new Principal(user);
         }catch (UserLoginException e){

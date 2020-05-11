@@ -22,4 +22,8 @@ public class Principal extends Screen{
         getStage().close();
         Login login = new Login();
     }
+    @FXML
+    private void switchToNewApi() throws IOException{
+
+    }
 }

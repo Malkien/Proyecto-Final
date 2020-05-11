@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/chats.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/VariableDebug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/styles/chatStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/chats2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/chatStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/IbmAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/IbmAssistant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/errorDialogCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/chats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/chats.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/Principal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/chats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/chats.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -108,6 +114,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
@@ -116,18 +125,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682296405" />
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1589133150718">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589133150718" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587404837276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587404837276" />
-    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588088188054">
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589156627086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588088188054" />
-    <state x="765" y="229" width="390" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1589128016465">
+    <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589156627086" />
+    <state x="765" y="229" width="390" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1589136603855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" width="390" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589128016465" />
+    <state x="765" y="229" width="390" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589136603855" />
     <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587682019793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -148,22 +161,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
-    <state width="1877" height="139" key="GridCell.Tab.0.bottom" timestamp="1589128873894">
+    <state width="1877" height="139" key="GridCell.Tab.0.bottom" timestamp="1589162917308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589128873894" />
-    <state width="1877" height="139" key="GridCell.Tab.0.center" timestamp="1589128873894">
+    <state width="1877" height="139" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
+    <state width="1877" height="139" key="GridCell.Tab.0.center" timestamp="1589162917308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589128873894" />
-    <state width="1877" height="139" key="GridCell.Tab.0.left" timestamp="1589128873894">
+    <state width="1877" height="139" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
+    <state width="1877" height="139" key="GridCell.Tab.0.left" timestamp="1589162917307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589128873894" />
-    <state width="1877" height="139" key="GridCell.Tab.0.right" timestamp="1589128873894">
+    <state width="1877" height="139" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917307" />
+    <state width="1877" height="139" key="GridCell.Tab.0.right" timestamp="1589162917308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589128873894" />
+    <state width="1877" height="139" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588726898460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

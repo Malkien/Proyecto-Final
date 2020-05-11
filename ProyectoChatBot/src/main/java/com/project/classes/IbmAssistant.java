@@ -13,13 +13,15 @@ import java.util.logging.LogManager;
  * @author Malkien
  */
 public class IbmAssistant {
+    private String name;
     private String url;
     private String apiKey;
     private Assistant assistant;
     private String assistantId;
     private String sessionId;
 
-    public IbmAssistant(String apiKey, String url){
+    public IbmAssistant(String name, String apiKey, String url){
+        this.name = name;
         LogManager.getLogManager().reset();//Crear log
         IamAuthenticator authenticator = new IamAuthenticator(apiKey); //sustituir por la apikey
         assistant = new Assistant(String.valueOf(LocalDate.now()), authenticator);
@@ -73,5 +75,29 @@ public class IbmAssistant {
                     .build();
         } while(!input.text().equals("quit"));
         deleteSession();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 }
