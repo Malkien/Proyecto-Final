@@ -2,6 +2,7 @@ com\project\exceptions\PasswordNotMatchException.class
 com\project\Login$1$1.class
 com\project\classes\IbmAssistant.class
 com\project\exceptions\UserLoginException.class
+com\project\VisualVariables\VisualVariables.class
 com\project\Registration.class
 module-info.class
 com\project\exceptions\CreateUserException.class

@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/VariableDebug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/styles/chatStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/chats2.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/chatStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/VisualVariables/VisualVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/IbmAssistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/IbmAssistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/chats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/chats.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/principal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/Principal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/Principal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/project/chats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/chats.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -161,22 +149,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
-    <state width="1877" height="139" key="GridCell.Tab.0.bottom" timestamp="1589162917308">
+    <state width="1405" height="159" key="GridCell.Tab.0.bottom" timestamp="1589251669380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
-    <state width="1877" height="139" key="GridCell.Tab.0.center" timestamp="1589162917308">
+    <state width="1405" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589251669380" />
+    <state width="1405" height="159" key="GridCell.Tab.0.center" timestamp="1589251669380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
-    <state width="1877" height="139" key="GridCell.Tab.0.left" timestamp="1589162917307">
+    <state width="1405" height="159" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589251669380" />
+    <state width="1405" height="159" key="GridCell.Tab.0.left" timestamp="1589251669380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917307" />
-    <state width="1877" height="139" key="GridCell.Tab.0.right" timestamp="1589162917308">
+    <state width="1405" height="159" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589251669380" />
+    <state width="1405" height="159" key="GridCell.Tab.0.right" timestamp="1589251669380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="139" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589162917308" />
+    <state width="1405" height="159" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589251669380" />
+    <state width="938" height="154" key="GridCell.Tab.1.bottom" timestamp="1589248412401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="154" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589248412401" />
+    <state width="938" height="154" key="GridCell.Tab.1.center" timestamp="1589248412401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="154" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589248412401" />
+    <state width="938" height="154" key="GridCell.Tab.1.left" timestamp="1589248412401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="154" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589248412401" />
+    <state width="938" height="154" key="GridCell.Tab.1.right" timestamp="1589248412401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="154" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589248412401" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588726898460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,10 +189,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588088051436" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589125824408">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589244295786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589125824408" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589244295786" />
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587681733420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
