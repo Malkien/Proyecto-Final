@@ -15,6 +15,7 @@ com\project\classes\UserDao.class
 com\project\exceptions\BirthdayNullException.class
 com\project\Chats$1.class
 com\project\Principal.class
+com\project\ScreenWithMenuBar.class
 com\project\exceptions\EmailUsedException.class
 com\project\exceptions\LengthQuestionException.class
 com\project\Login$1.class

@@ -44,7 +44,7 @@
    <center>
       <BorderPane id="containerChat" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1200.0" BorderPane.alignment="CENTER">
          <center>
-            <VBox id="mainChat" fx:id="containerMessages" prefWidth="1066.0" BorderPane.alignment="CENTER" />
+            <VBox id="mainChat" fx:id="containerMessages" maxWidth="1.7976931348623157E308" prefWidth="1066.0" BorderPane.alignment="CENTER" />
          </center>
          <bottom>
             <GridPane id="containerControllersChat" prefHeight="65.0" BorderPane.alignment="CENTER">

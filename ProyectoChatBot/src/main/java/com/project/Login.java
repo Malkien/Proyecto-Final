@@ -23,18 +23,33 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+/**
+ * Login Screen
+ */
 public class Login extends Screen{
+    /**
+     * TexField from the email
+     */
     @FXML
     private TextField textUser;
+    /**
+     * PasswordField for the password
+     */
     @FXML
     private PasswordField textPassword;
 
+    /**
+     * Constructor to the class
+     */
     public Login(){
         super(new Stage(), "login.fxml", "Login", false);
-        //getStage().initStyle(StageStyle.DECORATED);
 
     }
 
+    /**
+     * METHOD ON CLICK TO VERIFY IF THE EMAIL AND THE PASSWORD MATCH TO A USER IN THE DDBB
+     * @throws IOException
+     */
     @FXML
     private void verifyUserPass() throws IOException {
         try {
@@ -74,10 +89,20 @@ public class Login extends Screen{
 
         }
     }
+
+    /**
+     * METHOD TO LAUNCH THE REMEMBER PASSWORD SCREEN - IN PRODUCTION -
+     * @throws IOException
+     */
     @FXML
     private void switchToRememberPass() throws IOException {
         //RememberPass HERE
     }
+
+    /**
+     * METHOD ON CLICK TO LAUNCH THE REGISTER SCREEN
+     * @throws IOException
+     */
     @FXML
     private void switchToRegistration() throws  IOException {
         Registration registration = new Registration(getStage());

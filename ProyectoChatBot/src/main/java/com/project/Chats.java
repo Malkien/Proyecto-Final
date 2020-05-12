@@ -9,6 +9,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.geometry.NodeOrientation;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
@@ -95,32 +96,33 @@ public class Chats extends Screen{
         });
         chatNow = listChats.getItems().get(0);
         chatNow.createSession();
-
     }
 
     @FXML
     private void callToTheApi(){
         putMessage(textAnswer.getText(),true);
         putMessage(chatNow.chatUp(textAnswer.getText()),false);
+        textAnswer.clear();
     }
     private void putMessage(String text, Boolean send){
         HBox container = new HBox();
         if(!send){
-            container.setAlignment(Pos.TOP_LEFT);
+            container.nodeOrientationProperty().setValue(NodeOrientation.LEFT_TO_RIGHT);
         }else{
-            container.setAlignment(Pos.TOP_RIGHT);
+            container.nodeOrientationProperty().setValue(NodeOrientation.RIGHT_TO_LEFT);
         }
-        container.setMaxHeight(Region.USE_COMPUTED_SIZE);
-        container.setMaxWidth(Double.MAX_VALUE);
-        container.setBackground(new Background(new BackgroundFill(Color.PURPLE,null,null)));
+
 
         Label message = new Label();
         message.setText(text);
         message.setWrapText(true);
         message.setFont(VisualVariables.messageTextFont);
         message.setTextFill(VisualVariables.messageTextColor);
+        message.setBackground(new Background(new BackgroundFill(Color.PURPLE,null,null)));
         container.getChildren().add(message);
         containerMessages.getChildren().add(message);
+        container.setMaxHeight(Region.USE_COMPUTED_SIZE);
+        container.setMaxWidth(Double.POSITIVE_INFINITY);
     }
 
 }

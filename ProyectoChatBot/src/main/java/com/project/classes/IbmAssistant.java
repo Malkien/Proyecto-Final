@@ -6,6 +6,8 @@ import com.ibm.watson.assistant.v2.Assistant;
 import com.ibm.watson.assistant.v2.model.*;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.logging.LogManager;
 
@@ -53,6 +55,7 @@ public class IbmAssistant {
      * @return THE ANSWER
      */
     public String chatUp(String text){
+        String currentAction = null;
         MessageInput input = new MessageInput.Builder()
                 .messageType("text")
                 .text(text)
@@ -76,26 +79,20 @@ public class IbmAssistant {
                 return responseGeneric.get(0).text();
             }
         }
-
+        // Comprobar si hay alguna acción solicitada por el asistente.
+        List<DialogNodeAction> responseActions = response.getOutput().getActions();
+        if(responseActions != null) {
+            if(responseActions.get(0).getType().equals("client")) {
+                currentAction = responseActions.get(0).getName();
+            }
+        }
+        // El usuario ha preguntado qué hora es, así que devolvemos como salida la hora del sistema local.
+        if(currentAction.equals("display_time")) {
+            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("h:mm:ss a");
+            LocalTime time = LocalTime.now();
+            return "The current time is " + time.format(fmt) + ".";
+        }
         return null;
-    }
-
-    public String chatUpv2(String text){
-        Authenticator authenticator = new IamAuthenticator(apiKey);
-        Assistant service = new Assistant("2019-02-28", authenticator);
-
-        MessageInput input = new MessageInput.Builder()
-                .text(text)
-                .build();
-        MessageOptions messageOptions = new MessageOptions.Builder()
-                .assistantId("2709d27c-4da3-41a8-802d-f3c32ad042fb")
-                .sessionId("<session_id>")
-                .input(input)
-                .build();
-
-        MessageResponse messageResponse = service.message(messageOptions).execute().getResult();
-
-        return messageResponse.toString();
     }
 
     public Boolean isSessionOpen() {

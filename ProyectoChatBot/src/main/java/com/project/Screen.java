@@ -40,6 +40,13 @@ public abstract class Screen {
         this.user = user;
         initializaScreen(loaderResource, title, resizable);
     }
+
+    /**
+     * METHOD TO INITIALIZE THE SCREEN AND LINK IT TO HIS FXML
+     * @param loaderResource THE NAME OF THE FXML
+     * @param title THE TITLE OF THE SCREEN
+     * @param resizable IF IS RESIZABLE
+     */
     private void initializaScreen(String loaderResource, String title, Boolean resizable){
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(loaderResource));
