@@ -1,5 +1,6 @@
 package com.project.classes;
 
+import com.ibm.cloud.sdk.core.security.Authenticator;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
 import com.ibm.watson.assistant.v2.Assistant;
 import com.ibm.watson.assistant.v2.model.*;
@@ -25,10 +26,12 @@ public class IbmAssistant {
         this.name = name;
         this.apiKey = apiKey;
         this.url = url;
+        // Suprimir mensajes de registro en stdout.
+        //LogManager.getLogManager().reset();
         IamAuthenticator authenticator = new IamAuthenticator(apiKey); //sustituir por la apikey
         assistant = new Assistant(String.valueOf(LocalDate.now()), authenticator);
         assistant.setServiceUrl(url);
-        assistantId = url; // sustituir por el ID de asistente
+        assistantId = "2709d27c-4da3-41a8-802d-f3c32ad042fb"; // sustituir por el ID de asistente
         sessionOpen = false;
     }
     public void createSession(){
@@ -73,7 +76,26 @@ public class IbmAssistant {
                 return responseGeneric.get(0).text();
             }
         }
+
         return null;
+    }
+
+    public String chatUpv2(String text){
+        Authenticator authenticator = new IamAuthenticator(apiKey);
+        Assistant service = new Assistant("2019-02-28", authenticator);
+
+        MessageInput input = new MessageInput.Builder()
+                .text(text)
+                .build();
+        MessageOptions messageOptions = new MessageOptions.Builder()
+                .assistantId("2709d27c-4da3-41a8-802d-f3c32ad042fb")
+                .sessionId("<session_id>")
+                .input(input)
+                .build();
+
+        MessageResponse messageResponse = service.message(messageOptions).execute().getResult();
+
+        return messageResponse.toString();
     }
 
     public Boolean isSessionOpen() {

@@ -44,7 +44,6 @@ public class Chats extends Screen{
                     "SELECT name, CAST(AES_DECRYPT(apiKey,'"+user.getAnswer()+"') AS CHAR) AS apiKey, CAST(AES_DECRYPT(apiId,'"+user.getAnswer()+"') AS CHAR) AS apiId " +
                             "FROM api WHERE email = '"+user.getEmail()+"'"
             );
-            System.out.println(user.getAnswer());
             while(baseChats.next()){
                 apis.add(
                         new IbmAssistant(
@@ -55,11 +54,6 @@ public class Chats extends Screen{
                 );
 
 
-            }
-            for (IbmAssistant i: apis) {
-                System.out.println("_---------------------------------------------------------------------------------------");
-                System.out.println(String.valueOf(LocalDate.now()));
-                System.out.println("_---------------------------------------------------------------------------------------");
             }
             baseChats.close();
             statement.close();
@@ -93,26 +87,21 @@ public class Chats extends Screen{
              */
             @Override
             public void changed(ObservableValue<? extends IbmAssistant> observable, IbmAssistant oldValue, IbmAssistant newValue) {
-                //if(oldValue.isSessionOpen())
-                //    oldValue.deleteSession();
+                if(oldValue.isSessionOpen())
+                    oldValue.deleteSession();
                 chatNow = newValue;
-                //chatNow.createSession();
+                chatNow.createSession();
             }
         });
         chatNow = listChats.getItems().get(0);
+        chatNow.createSession();
 
     }
 
     @FXML
     private void callToTheApi(){
-        System.out.println("_---------------------------------------------------------------------------------------");
-        System.out.println(chatNow.getApiKey());
-        System.out.println(chatNow.getUrl());
-        System.out.println("_---------------------------------------------------------------------------------------");
-        chatNow.createSession();
         putMessage(textAnswer.getText(),true);
         putMessage(chatNow.chatUp(textAnswer.getText()),false);
-        chatNow.deleteSession();
     }
     private void putMessage(String text, Boolean send){
         HBox container = new HBox();
