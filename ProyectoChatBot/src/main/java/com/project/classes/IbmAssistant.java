@@ -24,7 +24,7 @@ public class IbmAssistant {
     private String sessionId;
     private Boolean sessionOpen;
 
-    public IbmAssistant(String name, String apiKey, String url){
+    public IbmAssistant(String name, String apiKey, String url, String assistantId){
         this.name = name;
         this.apiKey = apiKey;
         this.url = url;
@@ -33,7 +33,7 @@ public class IbmAssistant {
         IamAuthenticator authenticator = new IamAuthenticator(apiKey); //sustituir por la apikey
         assistant = new Assistant(String.valueOf(LocalDate.now()), authenticator);
         assistant.setServiceUrl(url);
-        assistantId = "2709d27c-4da3-41a8-802d-f3c32ad042fb"; // sustituir por el ID de asistente
+        this.assistantId = assistantId; // sustituir por el ID de asistente
         sessionOpen = false;
     }
     public void createSession(){
@@ -101,25 +101,5 @@ public class IbmAssistant {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getApiKey() {
-        return apiKey;
-    }
-
-    public void setApiKey(String apiKey) {
-        this.apiKey = apiKey;
     }
 }

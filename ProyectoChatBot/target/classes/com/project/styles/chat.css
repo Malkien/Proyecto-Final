@@ -1,13 +1,18 @@
 #containerChat{
-	-fx-background-color: red;
+	-fx-background-color: #EE9732;
 }
 
 #containerControllersChat{
-	-fx-background-color:yellow;
+	-fx-background-color:#A4E866;
+    -fx-padding: 10px;
 }
 
 #mainChat{
-	-fx-background-color:blue;
+	-fx-background-color: transparent;
+}
+
+#mainChat > .viewport {
+   -fx-background-color: transparent;
 }
 
 #buttonSend{

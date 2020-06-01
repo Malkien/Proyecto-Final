@@ -7,13 +7,13 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0" prefWidth="1280.0" stylesheets="@styles/chat.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
@@ -43,9 +43,6 @@
    </top>
    <center>
       <BorderPane id="containerChat" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1200.0" BorderPane.alignment="CENTER">
-         <center>
-            <VBox id="mainChat" fx:id="containerMessages" maxWidth="1.7976931348623157E308" prefWidth="1066.0" BorderPane.alignment="CENTER" />
-         </center>
          <bottom>
             <GridPane id="containerControllersChat" prefHeight="65.0" BorderPane.alignment="CENTER">
               <columnConstraints>
@@ -75,8 +72,11 @@
             </GridPane>
          </bottom>
          <top>
-            <HBox prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <HBox fx:id="chatHeader" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </top>
+         <center>
+            <ScrollPane id="mainChat" fx:id="containerMessages" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+         </center>
       </BorderPane>
    </center>
 </BorderPane>

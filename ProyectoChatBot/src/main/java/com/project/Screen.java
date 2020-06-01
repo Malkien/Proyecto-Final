@@ -2,6 +2,7 @@ package com.project;
 
 import com.project.classes.UserDao;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -69,6 +70,7 @@ public abstract class Screen {
     }
     public void showStage() {
         stage.show();
+        stage.centerOnScreen();
     }
 
     public Stage getStage() {

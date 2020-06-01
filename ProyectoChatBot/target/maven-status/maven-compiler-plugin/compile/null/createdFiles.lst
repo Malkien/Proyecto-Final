@@ -7,12 +7,14 @@ com\project\Registration.class
 module-info.class
 com\project\exceptions\CreateUserException.class
 com\project\App.class
+com\project\Chats$3.class
 com\project\Screen.class
 com\project\Chats.class
 com\project\Registration$1.class
 com\project\exceptions\UnderAgeException.class
 com\project\classes\UserDao.class
 com\project\exceptions\BirthdayNullException.class
+com\project\SpeechDirection.class
 com\project\Chats$1.class
 com\project\Principal.class
 com\project\ScreenWithMenuBar.class
@@ -27,5 +29,6 @@ com\project\Login.class
 com\project\exceptions\LengthAnswerException.class
 com\project\exceptions\EmailInvalidException.class
 com\project\exceptions\UsernameLengthException.class
+com\project\SpeechBox.class
 com\project\exceptions\PasswordInvalidException.class
 com\project\classes\User.class
