@@ -1,0 +1,22 @@
+.button {
+    -fx-background-color:transparent;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+#buttonNewAssistant{
+    -fx-background-image: url("../images/settingIcon.png");
+}
+#buttonChat{
+    -fx-background-image: url("../images/chatIcon.png");
+}
+#main{
+    -fx-background-color: #A4E866;
+}

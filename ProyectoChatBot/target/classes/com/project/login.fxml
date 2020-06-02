@@ -9,81 +9,98 @@
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" fillWidth="true" prefHeight="428.0" prefWidth="455.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
-  <children>
-    <Label prefHeight="30.0" text="Login" textAlignment="CENTER">
+
+<BorderPane id="main" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" stylesheets="@styles/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox alignment="CENTER" fillWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="428.0" prefWidth="455.0" spacing="20.0">
+        <children>
+          <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="281.0">
+            <children>
+              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="90.0" text="Email:">
+                <font>
+                  <Font size="15.0" fx:id="x1" />
+                </font>
+                <labelFor>
+                  <TextField fx:id="textUser" alignment="CENTER_LEFT" prefWidth="200.0" promptText="Username" styleClass="field" />
+                </labelFor>
+                <HBox.margin>
+                  <Insets right="20.0" />
+                </HBox.margin>
+              </Label>
+              <fx:reference maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="textUser" />
+            </children>
+          </HBox>
+          <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="281.0">
+            <children>
+              <Label font="$x1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="90.0" text="Password:">
+                <labelFor>
+                  <PasswordField fx:id="textPassword" alignment="CENTER_LEFT" focusTraversable="true" prefWidth="200.0" promptText="Password ****" styleClass="field" visible="true" />
+                </labelFor>
+                <HBox.margin>
+                  <Insets right="20.0" />
+                </HBox.margin>
+              </Label>
+              <fx:reference maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="textPassword" />
+            </children>
+          </HBox>
+          <Hyperlink fx:id="passForgot" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#switchToRememberPass" text="I forgot the password">
+            <effect>
+              <Lighting>
+                <bumpInput>
+                  <Shadow />
+                </bumpInput>
+                <light>
+                  <javafx.scene.effect.Light.Distant>
+                    <color>
+                      <Color blue="1.000" green="0.639" red="0.000" fx:id="x2" />
+                    </color>
+                  </javafx.scene.effect.Light.Distant>
+                </light>
+              </Lighting>
+            </effect>
+            <font>
+              <Font name="System Italic" size="12.0" fx:id="x3" />
+            </font>
+          </Hyperlink>
+          <Hyperlink id="passForgot" alignment="CENTER" font="$x3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#switchToRegistration" text="I don't have account">
+            <effect>
+              <Lighting>
+                <bumpInput>
+                  <Shadow />
+                </bumpInput>
+                <light>
+                  <javafx.scene.effect.Light.Distant color="$x2" />
+                </light>
+              </Lighting>
+            </effect>
+          </Hyperlink>
+        </children>
+        <padding>
+          <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+      </VBox>
+   </center>
+   <top>
+    <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="title" text="Login" textAlignment="CENTER" BorderPane.alignment="CENTER">
       <font>
         <Font name="Marlett" size="20.0" />
       </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
     </Label>
-    <HBox alignment="CENTER" prefHeight="30.0" prefWidth="281.0">
-      <children>
-        <Label prefWidth="90.0" text="Email:">
-          <font>
-            <Font size="15.0" fx:id="x1" />
-          </font>
-          <labelFor>
-            <TextField fx:id="textUser" alignment="CENTER_LEFT" prefWidth="200.0" promptText="Username" />
-          </labelFor>
-          <HBox.margin>
-            <Insets right="20.0" />
-          </HBox.margin>
-        </Label>
-        <fx:reference source="textUser" />
-      </children>
-    </HBox>
-    <HBox alignment="CENTER" prefHeight="30.0" prefWidth="281.0">
-      <children>
-        <Label font="$x1" prefWidth="90.0" text="Password:">
-          <labelFor>
-            <PasswordField fx:id="textPassword" alignment="CENTER_LEFT" focusTraversable="true" prefWidth="200.0" promptText="Password ****" visible="true" />
-          </labelFor>
-          <HBox.margin>
-            <Insets right="20.0" />
-          </HBox.margin>
-        </Label>
-        <fx:reference source="textPassword" />
-      </children>
-    </HBox>
-    <Hyperlink fx:id="passForgot" onAction="#switchToRememberPass" text="I forgot the password">
-      <effect>
-        <Lighting>
-          <bumpInput>
-            <Shadow />
-          </bumpInput>
-          <light>
-            <javafx.scene.effect.Light.Distant>
-              <color>
-                <Color blue="1.000" green="0.639" red="0.000" fx:id="x2" />
-              </color>
-            </javafx.scene.effect.Light.Distant>
-          </light>
-        </Lighting>
-      </effect>
-      <font>
-        <Font name="System Italic" size="12.0" fx:id="x3" />
-      </font>
-    </Hyperlink>
-    <Hyperlink id="passForgot" font="$x3" onAction="#switchToRegistration" text="I don't have account">
-      <effect>
-        <Lighting>
-          <bumpInput>
-            <Shadow />
-          </bumpInput>
-          <light>
-            <javafx.scene.effect.Light.Distant color="$x2" />
-          </light>
-        </Lighting>
-      </effect>
-    </Hyperlink>
-    <Button id="primaryButton" fx:id="loginBotton" onAction="#verifyUserPass" text="Enter" />
-  </children>
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-  </padding>
-</VBox>
+   </top>
+   <bottom>
+    <Button id="primaryButton" fx:id="loginBotton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#verifyUserPass" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

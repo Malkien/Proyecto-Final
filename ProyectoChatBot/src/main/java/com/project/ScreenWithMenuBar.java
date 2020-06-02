@@ -22,11 +22,34 @@ public class ScreenWithMenuBar extends Screen{
         Login login = new Login();
     }
 
+    @FXML
+    private void buttonPrincipalMenu(){
+        if(!this.getClass().getName().equals("com.project.Principal")){
+            getStage().close();
+            Principal principal = new Principal(this.getUser());
+        }
+    }
+
+    @FXML
+    private void buttonChatsMenu(){
+        if(!this.getClass().getName().equals("com.project.Chats")){
+            getStage().close();
+            Chats chats = new Chats(getUser(), getStage());
+        }
+
+    }
+
     /**
-     * METHOD ON CLICK TO THE MAENUBAR TO TURN OFF THE APPLICATION
+     * METHOD ON CLICK TO THE MENUBAR TO TURN OFF THE APPLICATION
      */
     @FXML
-    private void closeMenuItem(){
+    private void buttonCloseMenu(){
         System.exit(0);
     }
+
+    @FXML
+    private void buttonSettingMenu(){
+
+    }
+
 }

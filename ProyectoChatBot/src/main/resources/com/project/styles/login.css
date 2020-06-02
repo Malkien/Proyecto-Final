@@ -1,0 +1,20 @@
+.title{
+}
+
+#main{
+    -fx-background-color: #A4E866;
+}
+
+.button{
+    -fx-background-image: url("../images/login.png");
+    -fx-background-color:transparent;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.field{
+    -fx-background-color: #EE9732;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}

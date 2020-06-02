@@ -1,0 +1,8 @@
+#main{
+    -fx-background-color: #A4E866;
+}
+.field{
+    -fx-background-color: #EE9732;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}

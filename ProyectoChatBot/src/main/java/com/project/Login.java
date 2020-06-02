@@ -96,7 +96,7 @@ public class Login extends Screen{
      */
     @FXML
     private void switchToRememberPass() throws IOException {
-        //RememberPass HERE
+        PasswordLost passwordLost = new PasswordLost(getStage());
     }
 
     /**
