@@ -123,4 +123,9 @@ public class Registration extends Screen implements Initializable {
         field.setPromptText(text);
         field.setStyle("-fx-prompt-text-fill: red;");
     }
+
+    @FXML
+    private void goBack(){
+        Login login = new Login(getStage());
+    }
 }

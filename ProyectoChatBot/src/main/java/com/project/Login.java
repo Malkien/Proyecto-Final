@@ -46,6 +46,11 @@ public class Login extends Screen{
 
     }
 
+    public Login(Stage stage){
+        super(stage, "login.fxml", "Login", false);
+
+    }
+
     /**
      * METHOD ON CLICK TO VERIFY IF THE EMAIL AND THE PASSWORD MATCH TO A USER IN THE DDBB
      * @throws IOException
