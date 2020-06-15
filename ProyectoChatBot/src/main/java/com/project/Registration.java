@@ -16,25 +16,61 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+/**
+ * REGISTRATION CLASS
+ */
 public class Registration extends Screen implements Initializable {
+    /**
+     * the choiceBox of the question
+     */
     @FXML
     private ChoiceBox<String> resQuestion;
+    /**
+     * The textfield to the answer
+     */
     @FXML
     private TextField resAnswer;
+    /**
+     * The textfield to the question
+     */
     @FXML
     private TextField resQuestion2;
+    /**
+     * The textfield to the usermane
+     */
     @FXML
     private TextField resUsername;
+    /**
+     * The passwordFiel to the password
+     */
     @FXML
     private PasswordField resPassword;
+    /**
+     * The passwordField to verify the password
+     */
     @FXML
     private PasswordField resPassword2;
+    /**
+     * The textfield to the email
+     */
     @FXML
     private TextField resEmail;
+    /**
+     * the DatePicker to the birthday
+     */
     @FXML
     private DatePicker resDate;
+    /**
+     * The checkBox to accept the terms
+     */
     @FXML
     private CheckBox resCheck;
+
+    /**
+     * Override the initialize of the screen
+     * @param location the url location
+     * @param resources the resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         resQuestion.getItems().setAll("What was your childhood's pet?", "What was the name of your first love?", "Custom question");
@@ -57,10 +93,17 @@ public class Registration extends Screen implements Initializable {
         );
     }
 
+    /**
+     * The constuctor od the class
+     * @param stage the stage
+     */
     public Registration(Stage stage){
         super(stage, "registration.fxml", "Registration", false);
     }
 
+    /**
+     * The click of the register button to registrate the new user in the bbdd
+     */
     @FXML
     private void registerAction(){
         String question = "";
@@ -87,6 +130,7 @@ public class Registration extends Screen implements Initializable {
                         question,
                         resAnswer.getText()
                 );
+                goBack();
             }else{
                 throw new PasswordNotMatchException();
             }
@@ -118,12 +162,21 @@ public class Registration extends Screen implements Initializable {
             resDate.getEditor().setBackground(new Background(new BackgroundFill(Color.DARKRED,null,null)));
         }
     }
+
+    /**
+     * To write a prompt text in the field with red color
+     * @param field the TextField
+     * @param text the text
+     */
     private void errorTextField(TextField field, String text){
         field.clear();
         field.setPromptText(text);
         field.setStyle("-fx-prompt-text-fill: red;");
     }
 
+    /**
+     * Go to the Login Screen
+     */
     @FXML
     private void goBack(){
         Login login = new Login(getStage());

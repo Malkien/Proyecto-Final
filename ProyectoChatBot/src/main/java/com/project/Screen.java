@@ -13,7 +13,13 @@ import java.io.IOException;
  * Abstract Class Screen
  */
 public abstract class Screen {
+    /**
+     * The stage
+     */
     private Stage stage;
+    /**
+     * The userDao
+     */
     private UserDao user;
 
     /**
@@ -68,23 +74,43 @@ public abstract class Screen {
             e.printStackTrace();
         }
     }
+
+    /**
+     * To show the stage and center it to the screen
+     */
     public void showStage() {
         stage.show();
         stage.centerOnScreen();
     }
 
+    /**
+     * GETTER OF STAGE
+     * @return the stage
+     */
     public Stage getStage() {
         return stage;
     }
 
+    /**
+     * SETTER OF THE STAGE
+     * @param stage the stage
+     */
     public void setStage(Stage stage) {
         this.stage = stage;
     }
 
+    /**
+     * GETTER OF THE USER
+     * @return the user
+     */
     public UserDao getUser() {
         return user;
     }
 
+    /**
+     * SETTER OF THE USER
+     * @param user the user
+     */
     public void setUser(UserDao user) {
         this.user = user;
     }

@@ -9,7 +9,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDate;
 
+/**
+ * CLASS USERDAO
+ */
 public class UserDao {
+    /**
+     * VARIABLE WITH THE USER
+     */
     private User user;
 
     /**
@@ -119,7 +125,11 @@ public class UserDao {
 
     public void setPassword(String password) throws SQLException, PasswordInvalidException {
         this.user.setPassword(password);
-        updateCamp("password", password);
+        try(Connection connection = DataBaseUtils.createConnection()){
+            connection.createStatement().executeUpdate(
+                    "UPDATE "+DataBaseUtils.nameTableUser+" SET password =AES_ENCRYPT('"+password+"','"+user.getAnswer()+"') WHERE email='"+this.user.getEmail()+"'"
+            );
+        }
     }
 
     /**
@@ -208,7 +218,6 @@ public class UserDao {
             connection.createStatement().executeUpdate(
                     "UPDATE "+DataBaseUtils.nameTableUser+" SET "+field+"='"+modify+"' WHERE email='"+this.user.getEmail()+"'"
             );
-            connection.commit();
         }
     }
 }

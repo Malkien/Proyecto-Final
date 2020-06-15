@@ -11,6 +11,7 @@ com\project\classes\UserDao.class
 com\project\Principal.class
 com\project\ScreenWithMenuBar.class
 com\project\exceptions\EmailUsedException.class
+com\project\exceptions\UserNotFoundException.class
 com\project\Login$1.class
 com\project\Chats$2.class
 com\project\database\DataBaseUtils.class

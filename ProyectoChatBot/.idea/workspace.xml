@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/passwordLost.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/PasswordLost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/PasswordLost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/registration.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ScreenWithMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/ScreenWithMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/SpeechBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/SpeechBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/passwordLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/passwordLost.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/passwordLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/passwordLost.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/secondary.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +61,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2724595" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,26 +166,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
-    <state width="1401" height="235" key="GridCell.Tab.0.bottom" timestamp="1591126614573">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1395" height="237" key="GridCell.Tab.0.bottom" timestamp="1592248061504">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
-    <state width="1401" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591126614573" />
-    <state width="1401" height="235" key="GridCell.Tab.0.center" timestamp="1591126614573">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1395" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
+    <state width="1399" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
+    <state width="1395" height="237" key="GridCell.Tab.0.center" timestamp="1592248061504">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
-    <state width="1401" height="235" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591126614573" />
-    <state width="1401" height="235" key="GridCell.Tab.0.left" timestamp="1591126614573">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1395" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
+    <state width="1399" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
+    <state width="1395" height="237" key="GridCell.Tab.0.left" timestamp="1592248061504">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
-    <state width="1401" height="235" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591126614573" />
-    <state width="1401" height="235" key="GridCell.Tab.0.right" timestamp="1591126614573">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1395" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
+    <state width="1399" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754253" />
+    <state width="1395" height="237" key="GridCell.Tab.0.right" timestamp="1592248061504">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
-    <state width="1401" height="235" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591126614573" />
+    <state width="1395" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
+    <state width="1399" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
     <state width="938" height="154" key="GridCell.Tab.1.bottom" timestamp="1589303469815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,15 +210,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1590965248019" />
-    <state x="421" y="119" key="SettingsEditor" timestamp="1588088051436">
+    <state x="421" y="119" key="SettingsEditor" timestamp="1591962549900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588088051436" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591055386060">
+    <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962549900" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592240386632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590357070064" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591055386060" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592240386632" />
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587681733420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

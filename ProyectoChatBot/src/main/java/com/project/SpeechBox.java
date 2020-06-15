@@ -13,19 +13,43 @@ import javafx.scene.shape.SVGPath;
 import static com.project.VisualVariables.VisualVariables.DEFAULT_RECEIVER_COLOR;
 import static com.project.VisualVariables.VisualVariables.DEFAULT_SENDER_COLOR;
 
+/**
+ * ENUM IF IS LEFT OR RIGHT
+ */
 enum SpeechDirection{
     LEFT, RIGHT
 }
 
+/**
+ * SPEECHBOX CLASS
+ */
 public class SpeechBox extends HBox {
+    /**
+     * The background of the sender and the receiver
+     */
     private Background DEFAULT_SENDER_BACKGROUND, DEFAULT_RECEIVER_BACKGROUND;
-
+    /**
+     * The message
+     */
     private String message;
+    /**
+     * The direction
+     */
     private SpeechDirection direction;
-
+    /**
+     * The label
+     */
     private Label displayedText;
+    /**
+     * the indicator direction
+     */
     private SVGPath directionIndicator;
 
+    /**
+     * CONSTRUCTOR OF THE CLASS
+     * @param message the message
+     * @param direction the direction
+     */
     public SpeechBox(String message, SpeechDirection direction){
         this.message = message;
         this.direction = direction;
@@ -33,6 +57,9 @@ public class SpeechBox extends HBox {
         setupElements();
     }
 
+    /**
+     * The initialization
+     */
     private void initialiseDefaults(){
         DEFAULT_SENDER_BACKGROUND = new Background(
                 new BackgroundFill(DEFAULT_SENDER_COLOR, new CornerRadii(5,0,5,5,false), Insets.EMPTY));
@@ -40,6 +67,9 @@ public class SpeechBox extends HBox {
                 new BackgroundFill(DEFAULT_RECEIVER_COLOR, new CornerRadii(0,5,5,5,false), Insets.EMPTY));
     }
 
+    /**
+     * Setup the elements
+     */
     private void setupElements(){
         displayedText = new Label(message);
         displayedText.setPadding(new Insets(5));
@@ -54,6 +84,9 @@ public class SpeechBox extends HBox {
         }
     }
 
+    /**
+     * Configuration of the sender
+     */
     private void configureForSender(){
         displayedText.setBackground(DEFAULT_SENDER_BACKGROUND);
         displayedText.setAlignment(Pos.CENTER_RIGHT);
@@ -67,6 +100,9 @@ public class SpeechBox extends HBox {
         setAlignment(Pos.CENTER_RIGHT);
     }
 
+    /**
+     * Configuration os the receiver
+     */
     private void configureForReceiver(){
         displayedText.setBackground(DEFAULT_RECEIVER_BACKGROUND);
         displayedText.setAlignment(Pos.CENTER_LEFT);

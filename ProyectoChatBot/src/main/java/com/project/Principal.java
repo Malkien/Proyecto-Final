@@ -28,7 +28,7 @@ public class Principal extends ScreenWithMenuBar{
     }
 
     /**
-     *
+     * Not in use
      * @throws IOException
      */
     @FXML

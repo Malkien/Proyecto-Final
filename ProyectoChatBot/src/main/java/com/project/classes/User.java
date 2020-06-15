@@ -1,13 +1,16 @@
 package com.project.classes;
 
-import com.project.database.DataBaseUtils;
+
 import com.project.exceptions.*;
 
-import java.sql.Connection;
+
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.Period;
 
+/**
+ * CLASS USER
+ */
 public class User {
     private String username;
     private String password;

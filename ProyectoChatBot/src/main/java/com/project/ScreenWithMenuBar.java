@@ -6,8 +6,18 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * SCREENWITHMENUBAR CLASS EXTENDS OF SCREEN
+ */
 public class ScreenWithMenuBar extends Screen{
-
+    /**
+     * CONSTRUCTOR OF THE CLASS
+     * @param stage the stage
+     * @param user the suer
+     * @param loaderResource the loaderResource
+     * @param title the title
+     * @param resizable is resizable
+     */
     public ScreenWithMenuBar(Stage stage, UserDao user, String loaderResource, String title, Boolean resizable) {
         super(stage, user, loaderResource, title, resizable);
     }
@@ -22,6 +32,9 @@ public class ScreenWithMenuBar extends Screen{
         Login login = new Login();
     }
 
+    /**
+     * METHOD TO GO TO THE PRINCIPAL SCREEN
+     */
     @FXML
     private void buttonPrincipalMenu(){
         if(!this.getClass().getName().equals("com.project.Principal")){
@@ -30,6 +43,9 @@ public class ScreenWithMenuBar extends Screen{
         }
     }
 
+    /**
+     * METHOD TO GO TO THE CHATSMENU
+     */
     @FXML
     private void buttonChatsMenu(){
         if(!this.getClass().getName().equals("com.project.Chats")){
@@ -47,6 +63,9 @@ public class ScreenWithMenuBar extends Screen{
         System.exit(0);
     }
 
+    /**
+     * METHODS TO GO TO THE SETTING
+     */
     @FXML
     private void buttonSettingMenu(){
 
