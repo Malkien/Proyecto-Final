@@ -1,3 +1,4 @@
+com\project\Settings.class
 com\project\exceptions\PasswordNotMatchException.class
 com\project\Login$1$1.class
 com\project\classes\IbmAssistant.class

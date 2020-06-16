@@ -68,7 +68,7 @@ public class ScreenWithMenuBar extends Screen{
      */
     @FXML
     private void buttonSettingMenu(){
-
+        Settings settings = new Settings();
     }
 
 }

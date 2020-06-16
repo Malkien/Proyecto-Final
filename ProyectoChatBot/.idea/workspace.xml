@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e274b9-ac0d-42f3-975c-449959f5cfac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/exceptions/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/styles/passwordLost.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/project/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/project/setting.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/PasswordLost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/PasswordLost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/Chats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/ScreenWithMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/ScreenWithMenuBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/project/SpeechBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/SpeechBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/classes/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/project/passwordLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/project/passwordLost.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/passwordLost.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/passwordLost.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/secondary.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/VisualVariables/VisualVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/VisualVariables/VisualVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +61,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot" />
       <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project" />
       <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project\images" />
       <recent name="C:\Users\malki\IdeaProjects\pruebafx\ProyectoChatBot\ProyectoChatBot\ProyectoChatBot\ProyectoChatBot\src\main\resources\com\proyecto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\malki\Documents\GitHub\Proyecto-Final\ProyectoChatBot\src\main\resources\com\project\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,10 +132,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589156627086" />
-    <state x="765" y="229" width="390" height="728" key="#com.intellij.ide.util.MemberChooser" timestamp="1591092701500">
+    <state x="765" y="229" width="390" height="728" key="#com.intellij.ide.util.MemberChooser" timestamp="1592297689146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" width="390" height="728" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591092701500" />
+    <state x="765" y="229" width="390" height="728" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592297689146" />
     <state x="693" y="209" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587682019793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,30 +164,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587682109101" />
-    <state width="1395" height="237" key="GridCell.Tab.0.bottom" timestamp="1592248061504">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1389" height="237" key="GridCell.Tab.0.bottom" timestamp="1592306988260">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
     <state width="1395" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
-    <state width="1399" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
-    <state width="1395" height="237" key="GridCell.Tab.0.center" timestamp="1592248061504">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1389" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592306988260" />
+    <state width="1389" height="237" key="GridCell.Tab.0.center" timestamp="1592306988260">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
     <state width="1395" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
-    <state width="1399" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
-    <state width="1395" height="237" key="GridCell.Tab.0.left" timestamp="1592248061504">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1389" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592306988260" />
+    <state width="1389" height="237" key="GridCell.Tab.0.left" timestamp="1592306988259">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
     <state width="1395" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
-    <state width="1399" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754253" />
-    <state width="1395" height="237" key="GridCell.Tab.0.right" timestamp="1592248061504">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1389" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592306988259" />
+    <state width="1389" height="237" key="GridCell.Tab.0.right" timestamp="1592306988260">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1392" height="159" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590363230331" />
     <state width="1395" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1592248061504" />
-    <state width="1399" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962754254" />
+    <state width="1389" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592306988260" />
     <state width="938" height="154" key="GridCell.Tab.1.bottom" timestamp="1589303469815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,19 +212,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="119" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591962549900" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592240386632">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592296239870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1590357070064" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592240386632" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592296239870" />
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587681733420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="719" y="399" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587681733420" />
-    <state x="-967" y="0" width="974" height="1047" maximized="true" key="dock-window-1" timestamp="1588099541692">
+    <state x="-1928" y="-8" width="1277" height="762" maximized="true" key="dock-window-1" timestamp="1592298776471">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-967" y="0" width="974" height="1047" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588099541692" />
+    <state x="-1928" y="-8" width="1277" height="762" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1592298776471" />
     <state x="1208" y="300" width="1893" height="1027" maximized="true" key="dock-window-2" timestamp="1588110199042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

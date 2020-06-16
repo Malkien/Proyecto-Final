@@ -1,5 +1,6 @@
 package com.project;
 
+import com.project.VisualVariables.VisualVariables;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -73,6 +74,7 @@ public class SpeechBox extends HBox {
     private void setupElements(){
         displayedText = new Label(message);
         displayedText.setPadding(new Insets(5));
+        displayedText.setFont(VisualVariables.messageTextFont);
         displayedText.setWrapText(true);
         directionIndicator = new SVGPath();
 

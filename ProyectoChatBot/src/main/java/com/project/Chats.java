@@ -76,6 +76,11 @@ public class Chats extends ScreenWithMenuBar{
      */
     private ObservableList<Node> speechBubbles = FXCollections.observableArrayList();
 
+    /**
+     * CONSTRUCTOR OF THE CLASS
+     * @param user the user
+     * @param stage the stage
+     */
     public Chats(UserDao user, Stage stage){
         super(stage, user, "chats.fxml", "Conversations", true);
         try(Connection connection = DataBaseUtils.createConnection()){
