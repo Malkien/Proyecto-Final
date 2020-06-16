@@ -9,21 +9,48 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.logging.LogManager;
 
 /**
  * This class contain the methods and variables for the use of ibm watson assistant
  * @author Malkien
  */
 public class IbmAssistant {
+    /**
+     * The name
+     */
     private String name;
+    /**
+     * The url
+     */
     private String url;
+    /**
+     * The api Key
+     */
     private String apiKey;
+    /**
+     * The assistant
+     */
     private Assistant assistant;
+    /**
+     * The id of the assistant
+     */
     private String assistantId;
+    /**
+     * The id of the session
+     */
     private String sessionId;
-    private Boolean sessionOpen;
+    /**
+     * If the sesion is open
+     */
+    private Boolean sessionOpen = false;
 
+    /**
+     * CONSTRUCTOR OF THE CLASS
+     * @param name the name
+     * @param apiKey the apikey
+     * @param url the url
+     * @param assistantId the assistant id
+     */
     public IbmAssistant(String name, String apiKey, String url, String assistantId){
         this.name = name;
         this.apiKey = apiKey;
@@ -34,14 +61,21 @@ public class IbmAssistant {
         assistant = new Assistant(String.valueOf(LocalDate.now()), authenticator);
         assistant.setServiceUrl(url);
         this.assistantId = assistantId; // sustituir por el ID de asistente
-        sessionOpen = false;
     }
+
+    /**
+     * METHOD THAT CREATES THE SESSION
+     */
     public void createSession(){
         CreateSessionOptions createSessionOptions = new CreateSessionOptions.Builder(assistantId).build();
         SessionResponse session = assistant.createSession(createSessionOptions).execute().getResult();
         sessionId = session.getSessionId();
         sessionOpen = true;
     }
+
+    /**
+     * METHOD THAT CLOSED THE SESSION
+     */
     public void deleteSession(){
         DeleteSessionOptions deleteSessionOptions = new DeleteSessionOptions.Builder(assistantId, sessionId).build();
         assistant.deleteSession(deleteSessionOptions).execute();
@@ -95,10 +129,18 @@ public class IbmAssistant {
         return null;
     }
 
+    /**
+     * GETTER sessionOpen
+     * @return the sessionOpen
+     */
     public Boolean isSessionOpen() {
         return sessionOpen;
     }
 
+    /**
+     * GETTER name
+     * @return the name
+     */
     public String getName() {
         return name;
     }

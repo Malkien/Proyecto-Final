@@ -99,7 +99,6 @@ public class Chats extends ScreenWithMenuBar{
                         )
                 );
 
-
             }
             baseChats.close();
             statement.close();
@@ -133,22 +132,21 @@ public class Chats extends ScreenWithMenuBar{
              */
             @Override
             public void changed(ObservableValue<? extends IbmAssistant> observable, IbmAssistant oldValue, IbmAssistant newValue) {
+
                 try{
-                    if(oldValue.isSessionOpen())
-                        oldValue.deleteSession();
-                } catch (NullPointerException e) {
-                    //error no encuentro sentido solo se dispara la primera vez que se pulsa
+                    oldValue.deleteSession();
+                }catch (NullPointerException e){
+
                 }
                 chatNow = newValue;
-                setupContactHeader();
+                contactHeader.setText(newValue.getName());
+                speechBubbles.clear();
                 chatNow.createSession();
             }
         });
-        chatNow = listChats.getItems().get(0);
         setupContactHeader();
         setupMessageDisplay();
         chatHeader.getChildren().add(contactHeader);
-        chatNow.createSession();
 
         textAnswer.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
             /**
@@ -165,8 +163,11 @@ public class Chats extends ScreenWithMenuBar{
         });
     }
 
+    /**
+     * METHOD THAT LOAD THE HEADER  OF THE CHAT
+     */
     private void setupContactHeader(){
-        contactHeader = new Label(chatNow.getName());
+        contactHeader = new Label();
         contactHeader.setAlignment(Pos.CENTER);
         contactHeader.setFont(VisualVariables.messageTextFont);
         contactHeader.setTextFill(VisualVariables.messageTextColor);
@@ -190,7 +191,7 @@ public class Chats extends ScreenWithMenuBar{
     }
 
     /**
-     *
+     *  METHOD THAT LOAD THE MESSAGE DISPLAY
      */
     private void setupMessageDisplay(){
         messageContainer = new VBox(5);
@@ -208,6 +209,4 @@ public class Chats extends ScreenWithMenuBar{
             }
         });
     }
-
-
 }

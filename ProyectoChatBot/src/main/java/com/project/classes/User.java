@@ -12,13 +12,47 @@ import java.time.Period;
  * CLASS USER
  */
 public class User {
+    /**
+     * The username
+     */
     private String username;
+    /**
+     * The password
+     */
     private String password;
+    /**
+     * The email
+     */
     private String email;
+    /**
+     * The birthday
+     */
     private LocalDate birthday;
+    /**
+     * The question
+     */
     private String question;
+    /**
+     * The answer
+     */
     private String answer;
 
+    /**
+     * CONSTRUCTOR OF THE CLASS
+     * @param username the username
+     * @param password the password
+     * @param email the email
+     * @param birthday the birthday
+     * @param question the question
+     * @param answer the answer
+     * @throws UsernameLengthException
+     * @throws PasswordInvalidException
+     * @throws EmailInvalidException
+     * @throws UnderAgeException
+     * @throws LengthQuestionException
+     * @throws LengthAnswerException
+     * @throws BirthdayNullException
+     */
     public User(String username, String password, String email, LocalDate birthday, String question, String answer) throws UsernameLengthException, PasswordInvalidException, EmailInvalidException, UnderAgeException, LengthQuestionException, LengthAnswerException, BirthdayNullException {
         setUsername(username);
         setPassword(password);
@@ -57,8 +91,12 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password){
-        this.password = password;
+    public void setPassword(String password) throws PasswordInvalidException {
+        if(checkPassword(password)){
+            this.password = password;
+        }else{
+            throw new PasswordInvalidException();
+        }
     }
 
     /**
